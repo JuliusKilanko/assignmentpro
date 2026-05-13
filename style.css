@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -5,20 +11,245 @@
 
 .hero-section{
     width: 100%;
-    height: 500px;
-    background-color: grey;
+    height: 700px;
+    background-image: linear-gradient( rgba(0.5, 0.5, 0.5, 0.5), rgba(0, 0, 0, 0.9)), url("./images/business-meeting.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .header{
     display: flex;
-    padding: 20px;
+    padding: 20px 100px;
     justify-content: space-between;
+    align-items: center;
 }
 
+.header span{
+    color: white;
+    font-family: "MonteCarlo", cursive;
+    font-size: 40px;
+    font-weight: bold;
+}
 .header ul{
     display: flex;
     gap: 20px;
     list-style: none;
-    font-size: 18px;
+    font-size: 15px;
     cursor: initial;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+.header li{
+    cursor: pointer;
+}
+
+.text-box{
+    display: flex;
+    padding: 100px;
+    flex: 1;
+}
+
+.text-area{
+    width: 490px;
+    height: 500px;
+    display: flexbox;
+
+}
+
+.text-area h1{
+    font-size: 65px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.text-area p{
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.image-box{
+    /* width: 400px;
+    height: 400px; */
+    background-color: black;
+}
+
+.text-area button{
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    border: 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    font-weight: 800;
+}
+.text-area button:hover{
+    border-radius: 0px;
+    border-radius: 10px;
+}
+
+     /* The Next Section After The HERO Section  */
+
+.inform{
+    background-color: white;
+    padding: 50px 100px;
+    justify-content: end;
+    width: 500px;
+}
+
+.inform h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 47px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.inform p{
+    font-family: "Montserrat", sans-serif;
+}
+
+.inform h1 span{
+    background-color: blue;
+    font-size: 60px;
+    border-radius: 10px;
+    padding:2px  5px;
+    font-style: oblique;
+    color: white;
+}
+
+    /* Box Area Design */
+
+.boxes{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    margin-bottom: 50px;
+
+}
+
+.boxes img{
+    width: 400px;
+    height: 400px;
+    background-size: contain;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.boxes .box-1{
+    width: 400px;
+    height: 450px;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.boxes .box-2{
+    width: 400px;
+    height: 450px;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.boxes .box-3{
+    width: 400px;
+    height: 450px;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.boxes .box-4{
+    width: 400px;
+    height: 450px;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* testimonial section design */
+
+.testimonial{
+    height: 400px;
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    padding: 90px;
+    gap: 30px;
+}
+
+.testimonial p{
+    font-size: 45px;
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    
+}
+
+.testimonial span{
+    text-align: right;
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    padding-right: 90px;
+
+}
+
+/* Sign up Box Section */
+
+.sign-up-box{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up{
+    background-color: blue;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 120px 80px;
+    gap: 50pc;
+}
+
+.call-to-action-text{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.call-to-action-text h3{
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+}
+
+.call-to-action-text p{
+    font-family: "Montserrat", sans-serif;   
+}
+
+.sign-up button{
+    padding: 15px 40px;
+    color: white;
+    background-color: transparent;
+    border: 1px white solid;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+}
+
+/* Footer Section Editing */
+
+footer{
+    background-color: rgb(19, 17, 17);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    font-family: "Montserrat", sans-serif; 
 }
